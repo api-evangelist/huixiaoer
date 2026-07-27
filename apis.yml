@@ -1,8 +1,25 @@
 aid: huixiaoer
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/huixiaoer.png
 name: Huixiaoer
-description: 'Huixiaoer is a company surfaced as a portfolio company of dcm-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Huixiaoer (会小二) is a Chinese online platform for booking meeting venues, hotel
+  conference rooms, and event spaces, operated by Beijing Yundong Digital Media Technology (北京云动数字媒体技术有限公司).
+  It connects companies with a network of conference hotels and specialty venues across China and 20+
+  overseas cities, offering venue matching, price negotiation, and one-on-one meeting-planning advisors,
+  plus bundled catering, accommodation, transportation, staging, team-building, incentive travel, and
+  exhibition booth services on a free-to-client, commission-based model. Backed by DCM Ventures and added
+  to the API Evangelist network as a portfolio lead; no public developer program, API, or documentation
+  surface was found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/huixiaoer/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise
+- Events
+- Meetings
+- Venue Booking
+- Hospitality
+- Travel
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/huixiaoer-domain-security.yml
 - type: Website
   url: http://www.huixiaoer.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
